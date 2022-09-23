@@ -1,5 +1,7 @@
 #include "ToDo.h"
 #include <iostream>
+#include <chrono>
+#include <ctime>
 
 	void ToDo::print_date(int num)
 	{
@@ -14,9 +16,9 @@
 	}
 	void ToDo::print_everything()
 	{
-		for(size_t i = 0; i < num; i++)
+		for(size_t i = 0; i < tab.size(); i++)
 		{
-			std::cout << tab[i] << " ";
+			std::cout <<i<< tab[i] << " ";
 			print_date(i);
 			std::cout << std::endl;
 		}
@@ -27,19 +29,36 @@
 		days.push_back(day);
 		months.push_back(month);
 		years.push_back(year);
-		check_date(tab.size)
+		check_date(tab.size());
+		num += 1;
 
 	}
-	bool ToDo::check_date(int num, int day, int month, int year)
+	//todo - check date witch current date!
+	bool ToDo::check_date(int num)
 	{
-		if (year > years[num])
+		
+		if (days[num] == 0 && months[num] == 0 && years[num] == 0)
 		{
-			if
+			return true;
 		}
-
+		return true;
 	}
 	void ToDo::delete_pos(int pos)
 	{
+		tab.erase(tab.begin()+pos -1);
+		days.erase(days.begin() + pos - 1);
+		months.erase(months.begin() + pos - 1);
+		years.erase(years.begin() + pos - 1);
+		num -= 1;
+	}
+	void ToDo::update_date()
+	{
+		struct tm parts;
+		std::time_t now_c = time(0);
+		localtime_s(&parts, &now_c);
 
+		 year = 1900 + parts.tm_year;
+		month = 1 + parts.tm_mon;
+		day = parts.tm_mday;
 	}
 
