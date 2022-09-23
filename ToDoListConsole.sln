@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToDoListConsole", "ToDoListConsole\ToDoListConsole.vcxproj", "{BFB5C139-61FF-4869-845C-D1EFD2380931}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Debug|x64.ActiveCfg = Debug|x64
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Debug|x64.Build.0 = Debug|x64
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Debug|x86.ActiveCfg = Debug|Win32
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Debug|x86.Build.0 = Debug|Win32
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Release|x64.ActiveCfg = Release|x64
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Release|x64.Build.0 = Release|x64
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Release|x86.ActiveCfg = Release|Win32
+		{BFB5C139-61FF-4869-845C-D1EFD2380931}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {124A4E43-5BC2-4E8C-B083-35A8AC526D94}
+	EndGlobalSection
+EndGlobal
