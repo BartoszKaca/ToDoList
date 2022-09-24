@@ -2,7 +2,43 @@
 #include <iostream>
 #include <chrono>
 #include <ctime>
+	void ToDo::menu()	
+	{
+		std::cout << "Options: " << std::endl;
+		std::cout << "1. check how many things are in to do? " << std::endl;
+		std::cout << "2. print tasks " << std::endl;
+		std::cout << "3. add new task " << std::endl;
+		std::cout << "4. " << std::endl;
+		std::cout << "5. " << std::endl;
+		std::cout << "6. " << std::endl;
+		int w{ 0 };
+		std::cin >> w;
+		switch (w)
+		{
+		case 1:
+			get_num();
+		case 2:
+			print_everything();
+		case 3:
+		{
+			std::cout << "name of the task:" << std::endl;
+			std::string name;
+			std::cin >> name;
+			std::cout << "/nNow, provide expiration date in this format: Minutes Hours Day Month Year, ";
+			int minute, hour, day, month, year;
+			std::cin >> minute >> hour >> day >> month >> year;
+			std::cout << minute << hour << day << month << year;
+		}
+		case 4:
 
+		case 5:
+
+		case 6:
+
+		default:
+			break;
+		}
+	}
 	void ToDo::print_date(int num)
 	{
 		if (months[num] != 0 && years[num] != 0)
@@ -57,7 +93,7 @@
 		std::time_t now_c = time(0);
 		localtime_s(&parts, &now_c);
 
-		 year = 1900 + parts.tm_year;
+		year = 1900 + parts.tm_year;
 		month = 1 + parts.tm_mon;
 		day = parts.tm_mday;
 	}

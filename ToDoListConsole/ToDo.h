@@ -15,6 +15,7 @@ private:
 	std::vector <int>months;
 	std::vector <int>years;
 public:
+	void menu();
 	void print_date(int num);
 	void get_num();
 	void print_everything();
