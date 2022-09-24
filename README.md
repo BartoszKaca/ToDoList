@@ -2,14 +2,11 @@
 
 Simple console C++ todo list
 
-Work in Progress
+What you can do with it?
 
-Expected Features:
+Of course, manage tasks
+Add expiration date and manage it
 
--expiration date
 
--add/delete elements from the list
-
--show list
-
--show menu
+IN PROGRESS:
+notifications, update task name when expired, update_time() working non-stop
