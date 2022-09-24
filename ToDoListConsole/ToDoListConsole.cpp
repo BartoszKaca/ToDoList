@@ -10,7 +10,7 @@
 int main()
 {
     ToDo play;
-    while (true)
+    while (play.abort==false)
     {
         play.menu();
     }
