@@ -9,4 +9,4 @@ Add expiration date and manage it
 
 
 IN PROGRESS:
-notifications, update task name when expired, update_time() working non-stop
+notifications, update task name when expired, update_time() working non-stop, making code readable
